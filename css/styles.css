@@ -64,6 +64,7 @@ h1, h2, h3, h4, p, ul {
 .link {
     text-decoration: none;
     font-style: normal;
+    color: inherit;
 }
 .section {
     padding-top: 94px;
@@ -472,12 +473,17 @@ img {
     line-height: 1.87;
     letter-spacing: 0.03em;
 }
-.project .item {
+
+.project-link {
+    display: block;
     border: 1px solid var(--project-border);
 }
-.project .item:hover {
+
+.project-link:hover,
+.project-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -522,6 +528,7 @@ img {
 }
 .footer-flex {
     display: flex;
+    align-items: baseline;
 
 }
 .adress-container {
@@ -529,6 +536,5 @@ img {
 }
 .join-container {
     width: 206px;
-    margin-top: 12px;
     margin-left: 70px;
 }
